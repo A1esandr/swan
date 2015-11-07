@@ -11,7 +11,7 @@ $db = new MysqliDb (DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 
 $data = Array ("name" => "Турецкий гамбит",
                  "genre" => "детектив",
-                 "author" => "Борис Акунин",
+                 "author" => "Акунин Б.",
                  "year" => "2002"
   );
   $id = $db->insert ('books', $data);
@@ -20,8 +20,8 @@ $data = Array ("name" => "Турецкий гамбит",
 
 $data = Array ("name" => "Дюна",
                  "genre" => "фантастика",
-                 "author" => "Неизвестный",
-                 "year" => "1977"
+                 "author" => "Герберт Ф.",
+                 "year" => "1965"
   );
   $id = $db->insert ('books', $data);
   if($id)
@@ -29,13 +29,31 @@ $data = Array ("name" => "Дюна",
 
 $data = Array ("name" => "Гамлет",
                  "genre" => "драма",
-                 "author" => "Вильям Шекспир",
-                 "year" => "1522"
+                 "author" => "Шекспир В.",
+                 "year" => "1601"
   );
   $id = $db->insert ('books', $data);
   if($id)
     echo 'book\'s sign was created. Id=' . $id.'<br>';
 
+$data = Array ("name" => "Война и мир",
+                 "genre" => "драма",
+                 "author" => "Толстой Л.",
+                 "year" => "1869"
+  );
+  $id = $db->insert ('books', $data);
+  if($id)
+    echo 'book\'s sign was created. Id=' . $id.'<br>';
+
+$data = Array ("name" => "Мертвые души",
+                 "genre" => "драма",
+                 "author" => "Гоголь Н.",
+                 "year" => "1847"
+  );
+  $id = $db->insert ('books', $data);
+  if($id)
+    echo 'book\'s sign was created. Id=' . $id.'<br>';
+    
 echo 'ok';
 
 ?>
