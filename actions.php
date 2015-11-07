@@ -15,6 +15,7 @@ $db = new MysqliDb (DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 // Функция для отображения всего списка книг
 function displayAll(){
 	global $db;
+	$db->orderBy("author","asc");
   $books = $db->get('books');
   
     if ($db->count > 0){
