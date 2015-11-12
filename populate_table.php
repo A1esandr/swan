@@ -54,6 +54,6 @@ $data = Array ("name" => "Мертвые души",
   if($id)
     echo 'book\'s sign was created. Id=' . $id.'<br>';
     
-echo 'ok';
+echo 'demo data added to table';
 
 ?>
