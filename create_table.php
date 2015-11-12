@@ -12,7 +12,8 @@ $users = $db->rawQuery(
         `name` CHAR(30) NOT NULL,
         `email` CHAR(50) NOT NULL,
         PRIMARY KEY(`login`)
-    )");
+    )
+    COLLATE utf8_general_ci");
 
-echo 'ok';
+echo 'table for catalogue created';
 ?>
